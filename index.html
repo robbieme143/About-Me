@@ -4,7 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      background-color: orangered;
+      color:papayawhip;
+
+    }
+
+    header > h2 {
+      color: rgb(208, 224, 64);
+      font-size:x-large;
+    }
+
+    .hero {
+      display: flex;
+
+    }
+
+    .box {
+      border: greenyellow solid thin;
+      border-radius: 10px;
+      box-sizing: border-box; /* doesnt work? */
+      padding: 20px; 
+      width: 50%;
+
+    
+    }
+
+    #repo {
+      color: rgb(183, 228, 21);
+      
+    }
+
+    a:hover{
+      color:whitesmoke;
+    }
+
+    a:visited{
+      color:red;
+    }
+
+
+
+  </style>
 </head>
 <body>
   <header>
@@ -25,11 +67,12 @@
 
   <article>
 
+    <section class="hero">
+    <section class="box">
     <h2>Repositories</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus ut iure natus ipsa dicta inventore in nesciunt odit nulla magnam, harum error earum nam veniam qui impedit aliquid reiciendis.</p>
 
-    <section>
-      <ol type="i">
+        <ol type="i" id="repo">
         <li><a href="#task">Task Planner</a></li>
         <li><a href="#budget">Budget Planner</a></li>
         <li><a href="#exercise">Exercise Planner</a></li>
@@ -41,7 +84,7 @@
       </ol>
     </section>
 
-    <section>
+    <section class="box">
     <h2>Expertise</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae ullam quam iure ex quia officiis possimus quaerat perferendis, ipsa consectetur sequi! Recusandae maiores, a ipsam nesciunt sed consectetur aut.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim accusamus praesentium animi, alias aliquid. Magnam accusantium quidem voluptate, temporibus fugit quibusdam placeat repudiandae quae, ea architecto aliquam quasi repellendus.</p>
@@ -54,6 +97,8 @@
       </ul>
     </nav>
     </section>
+
+  </section>
 
 
     <section>
@@ -112,14 +157,14 @@
             <td>HTML and Career Pathways</td>
             <td>BSM, HTML tables, forms</td>
             <td>HTML</td>
-            <td>In Progress</td>
+            <td>Completed</td>
           </tr>
 
           <tr>
             <td>Week 5</td>
-            <td>HTML, CSS</td>
-            <td>BSM, HTML, CSS</td>
-            <td>HTML/CSS</td>
+            <td>CSS</td>
+            <td>BSM, CSS,</td>
+            <td>CSS</td>
             <td>In Progress</td>
           </tr>
 
