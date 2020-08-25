@@ -8,7 +8,6 @@
     body {
       background-color: orangered;
       color:papayawhip;
-
     }
 
     header > h2 {
@@ -18,7 +17,6 @@
 
     .hero {
       display: flex;
-
     }
 
     .box {
@@ -27,8 +25,43 @@
       box-sizing: border-box; /* doesnt work? */
       padding: 20px; 
       width: 50%;
+    }
 
-    
+    #myform {
+      border: 2px solid peachpuff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 50px;
+
+    }
+
+    #myform label {
+      display: block;
+    }
+
+    #mytable {
+      border:plum thin solid;
+      border-radius: 10px;
+      margin: 50px;
+      padding: 50px;
+      overflow: auto;
+    }
+
+    table, th,  td {
+      border: thin solid lightgray;
+      text-align: center;
+    }
+
+    th {
+      background-color: lightgreen;
+      color:darkcyan;
+      padding: 5px;
+      width: 20%;
+
+    }
+
+    #subscribe {
+      text-align: center
     }
 
     #repo {
@@ -40,9 +73,6 @@
       color:whitesmoke;
     }
 
-    a:visited{
-      color:red;
-    }
 
 
 
@@ -68,45 +98,44 @@
   <article>
 
     <section class="hero">
-    <section class="box">
-    <h2>Repositories</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus ut iure natus ipsa dicta inventore in nesciunt odit nulla magnam, harum error earum nam veniam qui impedit aliquid reiciendis.</p>
+      <section class="box">
+        <h2>Repositories</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus ut iure natus ipsa dicta inventore in nesciunt odit nulla magnam, harum error earum nam veniam qui impedit aliquid reiciendis.</p>
 
-        <ol type="i" id="repo">
-        <li><a href="#task">Task Planner</a></li>
-        <li><a href="#budget">Budget Planner</a></li>
-        <li><a href="#exercise">Exercise Planner</a></li>
-        <li><a href="#collab">Collaborator Planner</a></li>
-        <li><a href="#finance">Financial Planner</a></li>
-        <li><a href="#time">Time Management Planner</a></li>
-        <li><a href="#grocery">Grocery Planner</a></li>
-        <li><a href="#flexible">YouNameIt Planner</a></li>
-      </ol>
+            <ol type="i" id="repo">
+            <li><a href="#task">Task Planner</a></li>
+            <li><a href="#budget">Budget Planner</a></li>
+            <li><a href="#exercise">Exercise Planner</a></li>
+            <li><a href="#collab">Collaborator Planner</a></li>
+            <li><a href="#finance">Financial Planner</a></li>
+            <li><a href="#time">Time Management Planner</a></li>
+            <li><a href="#grocery">Grocery Planner</a></li>
+            <li><a href="#flexible">YouNameIt Planner</a></li>
+          </ol>
+      </section>
+
+        <section class="box">
+        <h2>Expertise</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae ullam quam iure ex quia officiis possimus quaerat perferendis, ipsa consectetur sequi! Recusandae maiores, a ipsam nesciunt sed consectetur aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim accusamus praesentium animi, alias aliquid. Magnam accusantium quidem voluptate, temporibus fugit quibusdam placeat repudiandae quae, ea architecto aliquam quasi repellendus.</p>
+
+        <nav>
+          <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">Javascript</a></li>
+          </ul>
+        </nav>
+      </section>
+
     </section>
 
-    <section class="box">
-    <h2>Expertise</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae ullam quam iure ex quia officiis possimus quaerat perferendis, ipsa consectetur sequi! Recusandae maiores, a ipsam nesciunt sed consectetur aut.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim accusamus praesentium animi, alias aliquid. Magnam accusantium quidem voluptate, temporibus fugit quibusdam placeat repudiandae quae, ea architecto aliquam quasi repellendus.</p>
 
-    <nav>
-      <ul>
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#js">Javascript</a></li>
-      </ul>
-    </nav>
-    </section>
-
-  </section>
-
-
-    <section>
+    <section id="mytable">
       <h2>Study Timeline</h2>
 
       <input type="button" value="Add a New Entry" name="newEntry">
-
-      <br><br>
+        <br><br>
       
       <table>
         <thead>
@@ -170,14 +199,14 @@
 
         </tbody>
       </table>
-
     </section>
+
 
     <section>
 
-    <h2>Subscribe to my Newsletter</h2>  
+    <h2 id="subscribe">Subscribe to my Newsletter</h2>  
 
-    <form>
+    <form id="myform">
       <label>First Name: </label>
       <input type="text" name="firstName">
       <br>
